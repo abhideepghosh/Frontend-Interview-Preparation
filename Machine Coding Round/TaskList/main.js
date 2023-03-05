@@ -6,6 +6,7 @@ const tasks = document.querySelector(".tasks");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  if (!inputFeild.value) return;
   const newTask = inputFeild.value;
   inputFeild.value = "";
 
