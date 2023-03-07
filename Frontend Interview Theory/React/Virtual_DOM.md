@@ -1,0 +1,7 @@
+## Defnition Of Virtual DOM
+
+- The Virtual DOM is a concept used by React to optimize the rendering of user interfaces. It is a lightweight representation of the actual DOM, which is a tree-like structure that represents the HTML elements on a web page.
+- When a React component's state changes, React creates a new virtual DOM tree, which is a copy of the previous virtual DOM tree. React then compares the new virtual DOM tree with the previous one to determine which parts of the real DOM need to be updated. This process is called reconciliation.
+- The Virtual DOM is designed to minimize the number of manipulations needed to update the actual DOM. Rather than updating the DOM for every state change, React updates the Virtual DOM instead. This allows React to batch multiple changes and perform them in a more efficient way, which can improve performance and reduce the risk of bugs.
+- When React updates the Virtual DOM, it does so in a way that only updates the parts of the tree that have changed. This means that React can avoid updating parts of the tree that have not changed, which can further improve performance.
+- Overall, the Virtual DOM is an important feature of React that helps to improve the performance and efficiency of user interface rendering. By minimizing the number of manipulations needed to update the actual DOM, React can create fast and responsive user interfaces that provide a better user experience.
