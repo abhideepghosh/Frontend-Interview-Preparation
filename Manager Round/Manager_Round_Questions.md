@@ -48,6 +48,12 @@ As a frontend developer, my approach to a project from start to finish typically
 - Review code with colleagues: I would review my code with colleagues to get feedback on potential bugs or areas for improvement.
 - Continuously test and debug: I would continuously test and debug my code throughout the development process to catch errors early and ensure that the code works as expected.
 
+## How do you handle constructive feedback or criticism of your work? Can you give an example of a time when you received feedback that was difficult to hear, and how you responded?
+
+- I understand that constructive feedback is essential to improve my skills and grow in my career. I always try to accept feedback with an open mind and use it as an opportunity to learn and improve.
+- One example of receiving difficult feedback was when my instructor pointed out some flaws in my code during a code review. Initially, it was difficult to hear, but I listened carefully to the feedback and asked questions to understand how I could improve. I took the necessary steps to implement the suggested changes, and I thanked the instructor for his feedback.
+- I believe that feedback is critical to my growth and development as a professional, and I am always open to receiving feedback, both positive and negative, in order to improve my skills and become a better developer.
+
 ## Q1. What is the correlation between management and leadership?
 
 - By definition, managers assign tasks, maintain work reports, and ensure efficiency standards in a team. Leaders focus on aligning goals and influencing a team with broader business objectives.
@@ -64,10 +70,10 @@ As a frontend developer, my approach to a project from start to finish typically
 
 ## Q3. How would you handle conflicts with your co-workers?
 
-- Your recruiter wants to know how you have handled working relationships in your previous organisation. In short, they want to know how adaptive your communication skills are.
-
-1. Do mention that you focus on actively listening to their concern. Elaborate that you listen and show empathy towards the co-worker without blaming their behaviour.
-2. It is essential for managers to listen and react with no biases when co-workers have conflicts. You can try to understand the root of the issue and resolve them objectively. At the same time, you have to communicate HR policies clearly and focus on building mutual trust.
+- I would approach conflicts with my co-workers by first seeking to understand their perspective and concerns.
+- I would try to engage in open and honest communication to find a resolution that works for both parties.
+- If needed, I would involve a supervisor or mediator to help facilitate the conversation and find a mutually agreeable solution.
+- It is important to remain professional, respectful, and keep the focus on finding a solution that benefits the team and the project at hand.
 
 ## Q4. What is your definition of success?
 
