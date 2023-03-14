@@ -1,0 +1,22 @@
+## Techniques to optimize React app performance
+
+- Using useMemo( )
+  - It is a React hook that is used for caching CPU-Expensive functions.
+  - Sometimes in a React app, a CPU-Expensive function gets called repeatedly due to re-renders of a component, which can lead to slow rendering.
+  - useMemo( ) hook can be used to cache such functions. By using useMemo( ), the CPU-Expensive function gets called only when it is needed.
+- Using React.PureComponent
+  - It is a base component class that checks the state and props of a component to know whether the component should be updated.
+  - Instead of using the simple React.Component, we can use React.PureComponent to reduce the re-renders of a component unnecessarily.
+- Maintaining State Colocation
+  - This is a process of moving the state as close to where you need it as possible.
+  - Sometimes in React app, we have a lot of unnecessary states inside the parent component which makes the code less readable and harder to maintain. Not to forget, having many states inside a single component leads to unnecessary re-renders for the componen
+  - It is better to shift states which are less valuable to the parent component, to a separate component.
+- Lazy Loading And Code Splitting
+  - It is a technique used to reduce the load time of a React app. Lazy loading helps reduce the risk of web app performances to a minimum.
+  - Use lazy loading and code splitting to reduce the initial bundle size of the app and load components on demand.
+- Server Side Rendering
+  - Use server-side rendering (SSR) to improve initial page load time and SEO.
+- Avoid External API
+  - Avoid using too many third-party libraries or plugins, as they can slow down the app.
+- Use Callbacks
+  - Avoid unnecessary state updates by using the useCallback hook to memoize functions.
