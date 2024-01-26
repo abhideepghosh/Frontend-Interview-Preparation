@@ -1,7 +1,7 @@
 ## Definition Of An Event Loop
 
 - In JavaScript, the event loop is a key mechanism that enables non-blocking I/O operations, making it possible to write performant and responsive code. It is a fundamental part of the JavaScript runtime and provides an asynchronous execution model.
-- The event loop is a continuous process that checks the call stack and the event queue for tasks to execute. When a task is added to the event queue, the event loop picks it up and pushes it onto the call stack, where it is executed. Once the task is completed, the event loop continues to check the queue and the stack for more tasks to execute.
+- The event loop is a continuous process that checks the call stack and the event queue for tasks to execute. When a task is added to the event queue, the event loop picks it up and pushes it onto the call stack if the call stack is empty, where it is executed. Once the task is completed, the event loop continues to check the queue and the stack for more tasks to execute.
 - In essence, the event loop allows JavaScript to handle asynchronous operations by delegating them to the runtime, while keeping the call stack clear to handle synchronous code. This enables JavaScript to run efficiently and respond to user interactions and other events in a timely manner.
 
 ## In More detail, The Event Loop Works As Follows
