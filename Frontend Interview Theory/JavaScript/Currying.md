@@ -5,7 +5,7 @@
 - Currying can help make functions more flexible and reusable by allowing them to be partially applied, which means that some of their arguments can be supplied ahead of time, and the partially applied function can be used as a new function with fewer arguments. This makes it easier to create variations of a function without having to define entirely new functions from scratch.
 
 ## Example
-```
+```js
 const sum = (...nums) => nums.reduce((acc, curr) => acc + curr, 0);
 
 // Infinite Currying
