@@ -27,4 +27,31 @@ const arr = [1,2,3,4,5];
 const result = arr.myMap((el, i) => el ** 2);
 console.log(result);
 ```
+## ForEach
+```js
+const arr = [1,2,3,4,5];
+Array.prototype.myForEach = function (cb) {
+  for(let i=0; i<this.length; i++) {
+    cb(this[i], i, this);
+  }
+}
 
+let sum = 0;
+arr.myForEach((el, i) => {
+  sum += el;
+});
+console.log(sum); // Output: 15
+```
+## Filter
+```js
+const arr = [1,2,3,4,5];
+Array.prototype.myFilter = function(cb) {
+  const result = [];
+  for(let i=0; i<this.length; i++) {
+    if(cb(this[i], i, this)) result.push(this[i]);
+  }
+  return result;
+}
+const result = arr.myFilter((el, i) => el % 2 === 0);
+console.log(result); // Output: [2, 4]
+```
