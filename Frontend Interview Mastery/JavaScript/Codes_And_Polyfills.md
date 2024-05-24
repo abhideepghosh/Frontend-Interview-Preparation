@@ -55,3 +55,51 @@ Array.prototype.myFilter = function(cb) {
 const result = arr.myFilter((el, i) => el % 2 === 0);
 console.log(result); // Output: [2, 4]
 ```
+
+## Promise.all
+```js
+// Polyfill for Promise.all
+Promise.myAll = function(promises) {
+  return new Promise((resolve, reject) => {
+    // Check if the input is an array
+    if (!Array.isArray(promises)) return reject(new Error('Not iterable'));
+
+    // Initialize counters and results array
+    let resolvedCount = 0;
+    const promisesLength = promises.length;
+    const results = [];
+
+    // If the input array is empty, resolve immediately with an empty array
+    if (promisesLength === 0) return resolve(results);
+
+    // Iterate over each promise in the array
+    for (let idx = 0; idx < promisesLength; idx++) {
+      // Convert non-promise values to promises using Promise.resolve
+      Promise.resolve(promises[idx]).then(value => {
+        // Store the resolved value in the results array
+        results[idx] = value;
+        resolvedCount++;
+        // If all promises are resolved, resolve the main promise
+        if (resolvedCount === promisesLength) resolve(results);
+      }).catch(err => {
+        // If any promise rejects, reject the main promise
+        reject(err);
+      });
+    }
+  });
+};
+
+// Example usage of the polyfill
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve) => {
+  setTimeout(resolve, 100, 'foo');
+});
+
+// Using the custom Promise.myAll method
+Promise.myAll([promise1, promise2, promise3]).then(values => {
+  console.log(values); // Output: [3, 42, 'foo']
+}).catch(error => {
+  console.error(error);
+});
+```
