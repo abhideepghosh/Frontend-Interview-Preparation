@@ -8,6 +8,7 @@
 ```
 const sum = (...nums) => nums.reduce((acc, curr) => acc + curr, 0);
 
+// Infinite Currying
 const currySum = (a) => {
   return function (b) {
     if(b) return currySum(a + b); 
@@ -15,6 +16,6 @@ const currySum = (a) => {
   }
 }
 
-console.log(sum(10,20,30,40));   
-console.log(currySum(10)(20)(30)(40)());   
+console.log(sum(10,20,30,40)); // Output: 100   
+console.log(currySum(10)(20)(30)(40)()); // Output: 100
 ```
