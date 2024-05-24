@@ -9,10 +9,8 @@
 
 ## Introduce Yourself (1+ Years experience)
 - Hello, I am Abhideep Ghosh. I am an Associate Software Engineer at Dassault Systèmes, where I specialize in frontend development. My team works on the Bookmark Editor which is a data management tool integrated into industry-leading software products of DS like CATIA and Solidworks.
-- My expertise includes JavaScript, ReactJS, Redux, and various other frontend tools and practices.
-
-## What Role Are You Currently In? (1+ Years experience)
-- I am currently working as an Associate Software Engineer at Dassault Systèmes, focusing primarily on frontend development for the Bookmark Editor. The Bookmark Editor is a robust data management tool integrated into Dassault Systèmes' leading software products such as CATIA and Solidworks. My role involves enhancing user interfaces and user experiences using modern frontend technologies and frameworks, with a particular emphasis on JavaScript.
+- I specialize in JavaScript, working on improving the user experience and functionalities, as well as collaborating with other teams to ensure seamless integration of Bookmark Editor into the DS Products Suite.
+- Other than that, I work with a diverse international team across different time zones to achieve product goals.
 
 ## What Are Your Hobbies
 
