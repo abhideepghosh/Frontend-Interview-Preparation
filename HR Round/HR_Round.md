@@ -1,4 +1,4 @@
-## Introduce Yourself
+## Introduce Yourself (Back when I was a fresher in the IT Industry)
 
 - Hello, my name is Abhideep Ghosh, and I am a hard working graduate specialised in CSE with a strong passion for web development.
 - After completing my graduation in B.Tech CSE in 2019 from IEM Kolkata, I had to take a career break of 4 years due to medical reasons. During this time, I focused on my health and recovery, but I never lost sight of my passion for programming.
@@ -6,6 +6,13 @@
 - I have taken several online courses like Newton's full stack web dev course and javascript, nodejs courses from Udemy and have completed various projects, including CyberNotes(MERN), Hotstar Clone, and AI-Code-Wizard, to demonstrate my skills.
 - Although my career break has been challenging, it has given me the opportunity to develop resilience, determination, and a positive attitude towards life.
 - I am excited to start my career in front-end development and to work with a team that is dedicated to building innovative and user-friendly websites. Thank you for considering my application, and I look forward to discussing my qualifications further with you.
+
+## Introduce Yourself (1+ Years experience)
+- Hello, I am Abhideep Ghosh. I am an Associate Software Engineer at Dassault Systèmes, where I specialize in frontend development. My team works on the Bookmark Editor which is a data management tool integrated into industry-leading software products of DS like CATIA and Solidworks.
+- My expertise includes JavaScript, ReactJS, Redux, and various other frontend tools and practices.
+
+## What Role Are You Currently In? (1+ Years experience)
+- I am currently working as an Associate Software Engineer at Dassault Systèmes, focusing primarily on frontend development for the Bookmark Editor. The Bookmark Editor is a robust data management tool integrated into Dassault Systèmes' leading software products such as CATIA and Solidworks. My role involves enhancing user interfaces and user experiences using modern frontend technologies and frameworks, with a particular emphasis on JavaScript.
 
 ## What Are Your Hobbies
 
