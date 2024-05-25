@@ -103,3 +103,27 @@ Promise.myAll([promise1, promise2, promise3]).then(values => {
   console.error(error);
 });
 ```
+## Promise.race
+```js
+// Promise.race
+Promise.myRace = function(promises) {
+  return new Promise((resolve, reject) => {
+    if(!Array.isArray(promises)) return reject(new Error('Not iterable'));
+    for(let promise of promises) {
+      Promise.resolve(promise).then(resolve).catch(reject);
+    }
+  });
+}
+
+// Example usage of the polyfill
+const promise1 = new Promise((resolve) => setTimeout(resolve, 100, 'one'));
+const promise2 = new Promise((resolve, reject) => setTimeout(reject, 200, 'two'));
+const promise3 = new Promise((resolve) => setTimeout(resolve, 300, 'three'));
+
+// Using the custom Promise.myRace method
+Promise.myRace([promise1, promise2, promise3]).then(value => {
+  console.log(value); // Output: 'one'
+}).catch(error => {
+  console.error(error); 
+});
+```
