@@ -7,31 +7,39 @@
 ## Example Of A Custom Hook
 
 ```
-// Custom Hook useCounter
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function useCounter(initialValue) {
-  const [count, setCount] = useState(initialValue);
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
+const useFetch = (url) => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  return { count, increment, decrement };
-}
-```
+  useEffect(() => {
+    if (!url) return;
 
-```
-// Using useCounter Hook In A Component
-function Counter() {
-  const { count, increment, decrement } = useCounter(0);
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch(url);
+        if (!res.ok) {
+          throw new Error(`Error: ${res.status}`);
+        }
+        const result = await res.json();
+        setData(result);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-    </div>
-  );
-}
+    fetchData();
+  }, [url]);  // triggers refetch when URL changes
+
+  return { data, loading, error };
+};
+
+export default useFetch;
 ```
 
 ## Conclusion
